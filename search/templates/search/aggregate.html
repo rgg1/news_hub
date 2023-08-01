@@ -1,0 +1,17 @@
+{% extends 'search/base.html' %}
+
+{% block content %}
+<div class="center-content">
+    <h2>Original Article</h2>
+    <p><a href="{{ url }}" target="_blank">{{ url }}</a></p>
+    <p>{{ article_text }}</p>
+
+    <h2>Summary</h2>
+    <p>{{ summary }}</p>
+
+    <h2>Sentiment Analysis</h2>
+    <p>{{ sentiment }}</p>
+
+    <a class="button" href="{% url 'search' %}">New Search</a>
+</div>
+{% endblock %}

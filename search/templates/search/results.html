@@ -1,0 +1,12 @@
+{% extends 'search/base.html' %}
+
+{% block content %}
+<div class="results-container">
+{% for article in articles %}
+    <h2 class="article-title">{{ article.title|safe }}</h2>
+    <p><a href="{{ article.url }}" target="_blank">{{ article.url }}</a></p>
+    <a class="button" href="{% url 'aggregate' %}?url={{ article.url|escape }}">Aggregate</a>
+{% endfor %}
+</div>
+<a class="button" href="{% url 'search' %}">New Search</a>
+{% endblock %}

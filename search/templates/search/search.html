@@ -1,0 +1,17 @@
+{% extends 'search/base.html' %}
+
+{% block content %}
+<div class="disclaimer">
+    <h2>This website is used to search for recent news articles, summarize them, and analyze their sentiment.</h2>
+    <h2>simply type in a query and choose an article to aggregate/analyze from the list.</h2>
+    <p><small>Please note: The sentiment analysis (positive/negative) might not always be accurate as it is trained on a smaller dataset.</small></p>
+    <p><small>Another note: Summaries may occasionally be cut off mid sentence to avoid timing out during prediction.</small></p>
+</div>
+<div class="search-form">
+    <form method="post">
+        {% csrf_token %}
+        <input class="search-input" type="text" name="query">
+        <input class="search-button" type="submit" value="Search">
+    </form>
+</div>
+{% endblock %}

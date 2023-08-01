@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Hub</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'search/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>News Hub</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+</html>
