@@ -25,6 +25,10 @@ sentiment dataset to train this model on. This model is pretrained with BERT - s
 
 Disclaimer: While the sentiment analysis aims to accurately classify the news as positive or negative, it might not always align with individual perspectives. It attempts to gauge the general mood conveyed by the article, such as whether the news is uplifting or disheartening. However, please bear in mind that interpretations can vary, and the analysis might not always hit the mark.
 
+## Demo:
+
+https://github.com/rgg1/news_hub/assets/115763127/5545cc5b-3f14-473c-bb72-d6cb7a01cf9f
+
 ## Important Notice:
 
 This application relies on Azure ML endpoints for its core functionality. Please be aware that due to computing cost considerations, these endpoints are not left running continuously. Consequently, attempting to aggregate an article without activating the services may result in a Server Error.
